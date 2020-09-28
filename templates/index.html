@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MNIST as a service</title>
+
+  <body>
+    <center> <h1> MNIST as a service </h1> </center>
+    <br>
+    <center> Please upload the image of the MNIST sample to get a classification </center>
+<br><br><br><br>
+<center>
+    <form action="/ML" method= 'POST' enctype="multipart/form-data">
+      <input type="file" id='image' name='image'>
+      <br><br><br>
+      <input type="submit" value="Upload and Predict!">
+      </form>
+</center>
+      <br><br><br><br><br><br>
+      <center>Pridiction:: {{model_prediction}}      
+
+  </body>
+</html>
